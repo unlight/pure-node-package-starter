@@ -1,0 +1,30 @@
+{
+  "name": "pure-node-package-starter",
+  "version": "0.0.0-dev",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "go": "node --experimental-transform-types src/index.ts",
+    "test": "npm run test:r",
+    "test:r": "node --experimental-transform-types --test src/*.spec.mts",
+    "test:w": "node --experimental-transform-types --test --watch src/*.spec.mts",
+    "test:cov": "node --experimental-transform-types --test --experimental-test-coverage src/*.spec.mts",
+    "prebuild": "rm -rf dist",
+    "build": "echo pkgroll --target=es2020"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4"
+  }
+}
