@@ -7,6 +7,10 @@
 
 [MIT License](https://opensource.org/licenses/MIT) (c) 2024
 
+## Issues
+
+- no decorators
+
 ## Resources
 
 - https://github.com/elsewhencode/project-guidelines/blob/master/README.sample.md
