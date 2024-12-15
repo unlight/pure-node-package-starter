@@ -25,6 +25,6 @@
     "build": "echo pkgroll --target=es2020"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4"
+    "@types/node": "^22.10.2"
   }
 }
