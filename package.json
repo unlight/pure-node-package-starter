@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "go": "node --experimental-transform-types src/index.ts",
+    "start": "node --experimental-transform-types src/index.ts",
     "test": "npm run test:r",
     "test:r": "node --experimental-transform-types --test src/*.spec.mts",
     "test:w": "node --experimental-transform-types --test --watch src/*.spec.mts",
