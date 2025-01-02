@@ -6,13 +6,11 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "module": "./dist/pure-node-package-starter.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": "./dist/pure-node-package-starter.mjs"
     }
   },
   "scripts": {
@@ -22,9 +20,9 @@
     "test:w": "node --experimental-transform-types --test --watch src/*.spec.mts",
     "test:cov": "node --experimental-transform-types --test --experimental-test-coverage src/*.spec.mts",
     "prebuild": "rm -rf dist",
-    "build": "echo pkgroll --target=es2020"
+    "build": "npx microbundle -i src/index.ts --no-sourcemap --no-compress --target node -f es -o dist"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2"
+    "@types/node": "^22.10.4"
   }
 }
