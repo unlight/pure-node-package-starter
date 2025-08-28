@@ -5,7 +5,7 @@
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT) (c) 2024
+[MIT License](https://opensource.org/licenses/MIT) (c) 2025
 
 ## Issues
 
